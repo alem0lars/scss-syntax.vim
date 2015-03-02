@@ -44,3 +44,9 @@ autocmd FileType scss set iskeyword+=-
 ```
 
 Please be aware that this setting also affects the behavior of the motion keys.
+
+## Incompatibilities
+
+The `rainbow` plugin out-of-the-box causes incompabilities with `scss-syntax` plugin, leading to incorrect highlights or false errors in syntax highlighting of SCSS files.
+
+Please use a custom advanced configuration for `rainbow` (see [Issue #50](https://github.com/cakebaker/scss-syntax.vim/issues/50)) or disable it if you want to use `scss-syntax`.
